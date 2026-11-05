@@ -16,7 +16,7 @@ def euler_test(n):
     for a in bases:
         a=valid_base(a,n)
         x=pow(a,(n-1)//2,n)
-        if x!=1 and x!=-1:
+        if x!=1 and x!=n-1:
             return "Composite"
     return "Prime"
 n=int(input("Enter a number:"))
